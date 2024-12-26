@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="PT-PT">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>(Beta)Gerador de Curriculum Vitae (CV)</title>
+</head>
+<body>
+        
+        <div class="formulario">
+            <h1>Bem vindo(a)</h1>
+
+            <div id="pdfForm">
+            
+				<h2 class="titulo-box">DADOS PESSOAIS</h2>
+  				<label for="name">Nome:</label>
+  				<input type="text" id="nome" placeholder="Insira o seu Nome Completo" required>
+  				<label for="name">Email:</label>
+  				<input type="text" id="email" placeholder="Insira o seu Email" required>
+  				<label for="name">Contacto:</label>
+  				<input type="text" id="contacto" placeholder="Insira o seu Nr de Telefone" required>
+  				<label for="name">Morada:</label>
+  				<input type="text" id="morada" placeholder="Insira a sua Morada/Bairro" required>
+   
+    			<h2 class="titulo-box">FORMAÇÃO ACADÉMICA</h2>
+  				<label for="name">Nivel Academico/Curso e Ano</label>
+  				<input type="text" id="educacao1" placeholder="Ex: Concluiu 12ª Classe no Ano de 2025" required>
+  				<label for="name">Nivel Academico/Curso e Ano</label>
+  				<input type="text" id="educacao2" placeholder="Ex: Concluiu curso de Segurança Eletrónica na UEM no Ano de 2025" required>
+  				<label for="name">Nivel Academico/Curso e Ano</label>
+  				<input type="text" id="educacao3" placeholder="" required>
+  	
+   
+    			<h2 class="titulo-box">HABILIDADES</h2>
+  				<label for="name">Habilidade</label>
+  				<input type="text" id="habilidade1" placeholder="Ex: Conhecimento de Informática na Óptica do Utilizador" required>
+  				<label for="name">Habilidade</label>
+  				<input type="text" id="habilidade2" placeholder="Ex: Conhecimento de Pacotes Microsoft Office (Word, Excel, etc.)" required>
+  				<label for="name">Habilidade</label>
+  				<input type="text" id="habilidade3" placeholder="" required>
+  	
+   
+   				 <h2 class="titulo-box">LÍNGUAS</h2>
+  				<label for="name">Lingua e Nivel</label>
+  				<input type="text" id="lingua1" placeholder="Ex: Português – Intermedio" required>
+  				<label for="name">Lingua e Nivel</label>
+  				<input type="text" id="lingua2" placeholder="Ex: Inglês - Básico" required>
+  				<label for="name">Lingua e Nivel</label>
+  				<input type="text" id="lingua3" placeholder="" required>
+                
+                <button type="button" id="generatePdf">Criar CV</button>
+            
+            </div>
+            
+			
+
+	<div id="pdfPreview" class="content pdf-template" style="display: none;">
+	        
+		<div class="template-title posicao">
+			
+			<div class="box-titulo">
+			   <h1 class="nomeCV"  id="previewNome"></h1> 
+			</div>
+			
+			<div class="box-content">
+				<h4>Contacto:</h4>
+				<p id="previewContacto"></p>
+				<h4>Email:</h4>
+				<p id="previewEmail"></p>
+				<h4>Morada:</h4>
+				<p id="previewMorada"></p>
+			</div>
+			
+		</div>
+		
+		<div class="box-template posicao">
+			 
+			<h3 class="tituloCV">FORMAÇÃO ACADÉMICA</h3>
+			<hr class="baixo">
+			<p id="previewEducacao1"></p>
+			<p id="previewEducacao2"></p>
+			<p id="previewEducacao3"></p> 
+		
+			<h3 class="tituloCV">HABILIDADES</h3>
+			<hr class="baixo">
+			<p id="previewHabilidade1"></p>
+			<p id="previewHabilidade2"></p>
+			<p id="previewHabilidade3"></p>
+		
+			<h3 class="tituloCV">LÍNGUAS</h3>
+			<hr class="baixo">
+			<p id="previewLinguas1"></p>
+			<p id="previewLinguas2"></p>
+			<p id="previewLinguas3"></p>   
+		</div>
+		
+	</div>
+        <p class="rodape" style="font-size:12px">Desenvolvido por DondzaFácil</p>
+        </div>        
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	<script src="scripts.js"></script>
+<!--AnselmoMaquete (Fundador da DondzaFácil) 845017016-->
+</body>
+</html>

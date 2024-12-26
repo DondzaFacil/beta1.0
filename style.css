@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    transition: 0.45s ease;
+}
+
+h2{
+    margin: 11px 0px 11px 0px;
+}
+span{
+    font-size: 2em;
+}
+
+/* Herdado start */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+/* Herdado end */
+
+/*LOG IN start*/
+
+.formulario{
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 15px;
+/*    background: rgba(54, 57, 64, 0.5);*/
+    padding: 20px;
+    box-shadow:  2px 6px 13px -1px rgba(54, 57, 64, 1), 7px 7px 20px -6px rgba(54, 57, 64, 1);
+}
+
+.formulario>h1,span,.titulo-box{
+    text-align: center;
+    margin-bottom: 7px;
+}
+label{
+    font-weight: bolder;
+    display: block;
+    margin-top: 8px;
+}
+.formulario>div>input{
+    padding: 10px;
+    width: 100%;
+    margin: 5px auto 15px auto;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.formulario>div>input{
+    border-bottom: 1px solid #29DE92
+}
+
+.formulario>div>button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #29DE92;
+    color: #363940;
+    transition: 0.5s ease-out;
+}
+.formulario>div>button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #363940;
+    box-shadow: inset 0 13px 27px -17px rgba(50,50,93,0.25),inset 5px -5px 10px -15px rgba(0,0,0,0.3);
+}
+.formulario a:hover{
+    color: #fff;
+}
+
+
+
+/*LOG IN end*/
+
+
+/*CRIAR ACC star*/
+.formulario a{
+        color:black;
+        transition: ease .5s;
+    }
+.formulario a:hover{
+        color: #aaaaaa;
+    }
+
+.formulario div div{
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.formulario div div label{
+    font-size: 11px;
+    color:#363940;
+}
+.formulario div div label:hover{
+    cursor: pointer;
+}
+#ocultarEstilo{
+    display: none;
+}
+
+/*CRIAR ACC end*/
+
+
+/* PDF start*/
+
+.pdf-template p{
+    margin: 0 0 3px 0;
+    
+}
+
+.baixo{
+    margin-bottom: 1%
+}
+
+h3{
+    font-weight: bolder;
+    margin-top: 10%;
+    font-size: 1.5em;
+}
+
+.nomeCV{
+    text-transform:uppercase;
+    font-size: 2.5em;
+}
+
+.posicao{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.box-template{
+    background-color: #212121;
+    color: #f9f9f9;
+    padding: 1% 4% 9% 4%;
+    border-radius: 21px;
+}
+.box-template p{
+    font-size: 1.5em;
+}
+.template-title{
+    padding: 7% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-content{
+    color: #212121;
+}
+
+.rodape{
+    text-align:center;
+    margin: 5% 0 0 0;
+    font-size 5px;
+}
+/* PDF end */
+
+/*MEDIA QUERY*/
+/*MOBILE e TABLET*/
+@media (max-width: 480px){
+    
+    .section.conteudo{
+        padding: 15px 0px 0px 15px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .navega{
+        height: 100%;
+        width: 100%;
+        right: -100%;
+        padding: 25px;
+        top: 0px;
+        position: fixed;
+        z-index: 10;
+        background: rgba(60,60,60,0.97);
+        transition: right 700ms linear;
+    }
+    
+    .navega.active{
+        right: 0px;
+    }
+    ul{
+        margin-top: 60px;
+        text-align: center;
+    }
+    ul li{
+        font-size: 2em;
+    }
+    
+    .section.nav{
+        background-position:center;
+    }
+    
+    .section.nav .content .navegacao ul li{
+        padding: 20px 55px;
+        border-bottom: 1px solid #fff;
+}
+
+ .section.nav .content .navegacao ul li a:hover{
+        color: #29DE92;
+        transition: all 500ms ease;
+    }
+
+ .section.nav .content .navegacao ul li a{
+        color: #fff;
+        font-size: 1em;
+        font-weight: bolder;
+}
+    
+    .botao-baras span{
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    }
+    .navegacao{
+        align-items: center;
+    }
+    
+    
+    .navega span{
+        padding: 10px;
+        font-size: 35px;
+        cursor: pointer;
+        color: #fff;
+        float: right;
+    }
+    
+    .header{
+    padding: 6% 10% 1% 10%;
+    text-align: left;
+    }
+    
+    .titulos{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .titulos a {
+        margin-bottom: 5px;
+    }
+    .box-conteudo{
+        padding: 10px 0px 10px 0px 
+    }
+    .box-info{
+        margin: 10px 0px 10px 0px;
+        padding: 0%;
+    }
+    .padding-boxes{
+    padding: 0px 15px 0px 15px;
+   }
+    
+/*    FOOTER start*/
+    
+    .content.footer{
+        justify-content: space-evenly;
+        display: flex;
+        width: 98%;
+    }
+    .content.footer div{
+        text-align: ;
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    
+    
+/*    PESQUISA start*/
+    .box-resultado{
+        margin-bottom: 15px;
+        padding: 25px;
+    }
+    .box-resultado>a{
+        font-size: 10px;
+    }
+    
+/*    PESQUISA end*/
+    
+/*    AJUDAR PROJECTO start*/
+    .ajuda{
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 0% 0% 4.5% 0%
+    }
+    .box-ajuda.logo>img{
+        margin: 0% 0% 2% 6%;
+    }
+    
+/*    MODAL POP UP*/
+    .modal-content{
+        width: 80%;
+    }
+    
+}
+
+/*DESKTOP*/
+@media (min-width: 769px){
+    
+    .botao-baras{
+        display: none;
+    }
+    
+    #fechar{
+        display: none;
+    }
+    
+   .navega li{
+        display: inline-block;
+        padding: 20px 9px;
+    }
+    .navega li a{
+        color:#fff;
+        font-size: 18px;
+    }
+    
+    .navega li a:hover{
+        color: #aaaaaa;
+        transition: ease .5s;
+    }
+    
+    .navegacao{
+        align-items: center;
+    }
+}
+
+@media (min-width: 900px){
+    
+}
